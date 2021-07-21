@@ -1,6 +1,6 @@
 CREATE DATABASE distances ;
 
-use distances
+use distances;
 
 CREATE TABLE `postcodelatlng` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
