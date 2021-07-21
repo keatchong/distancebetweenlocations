@@ -81,7 +81,7 @@ public class DistanceBetweenTwoCitiesControllerTest {
 		MvcResult result = mockMvc.perform(request)
 				.andExpect(status().isOk())
 				.andExpect(content().json(
-						"{\"firstlocation\":{\"postCode\":\"AB10 1XG\",\"latitude\":\"57°8'39\\\"N\",\"longitude\":\"2°6'53\\\"S\"},\"secondlocation\":{\"postCode\":\"AB16 5ST\",\"latitude\":\"57°9'48\\\"N\",\"longitude\":\"2°9'34\\\"S\"},\"distance\":7.0,\"unit\":\"KM\"}"))
+						"{\"firstlocation\":{\"postCode\":\"AB10 1XG\",\"latitude\":\"57°8'39\\\"N\",\"longitude\":\"2°6'53\\\"S\"},\"secondlocation\":{\"postCode\":\"AB16 5ST\",\"latitude\":\"57°9'48\\\"N\",\"longitude\":\"2°9'34\\\"S\"},\"distance\":7.0,\"unit\":\"km\"}"))
 				.andReturn();
 
 		
