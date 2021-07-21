@@ -1,4 +1,4 @@
-CREATE DATABASE distances ;
+CREATE DATABASE distances;
 
 use distances;
 
