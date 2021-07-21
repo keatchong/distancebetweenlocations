@@ -1,4 +1,4 @@
-# distancebetweenlocations
+# Distance between two locations
 
 ## Deployment Steps
 
@@ -11,8 +11,9 @@
 5) cd into distancebetweenlocations where pom.xml resides
 6) mvn package
 7) jar file of distancebetweenlocations-0.0.1-SNAPSHOT.jar will be generated at folder distancebetweenlocations\target
-8) Run java -jar distancebetweenlocations-0.0.1-SNAPSHOT.jar to launch spring boot application ( must use java 11)
-9) Check the log in console untill you see  *Started DistancebetweenlocationsApplication in 5.51 seconds (JVM running for 6.015)*
+8) cd distancebetweenlocations\target
+9) Run java -jar distancebetweenlocations-0.0.1-SNAPSHOT.jar to launch spring boot application ( must use java 11)
+10) Check the log in console untill you see  *Started DistancebetweenlocationsApplication in 5.51 seconds (JVM running for 6.015)*
 
 ## My Development/Testing Environment
 - Apache Maven 3.5.3
