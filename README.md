@@ -74,13 +74,15 @@ GET http://localhost:8080/api/v1/getLatLng/AB12 4NA
 
 ```
 
-POST  http://localhost:8080/api/v1/updateLatLng/AB12 4NA
+POST   http://localhost:8080/api/v1/updateLatLng/AB21 7LX
 
 Request body
 
 {
-    "latitude": 57.064271000,
-    "longitude": -2.130021000
+    
+    "latitude": 557.210086,
+    "longitude": 2.180591
+
 }
 
 ```

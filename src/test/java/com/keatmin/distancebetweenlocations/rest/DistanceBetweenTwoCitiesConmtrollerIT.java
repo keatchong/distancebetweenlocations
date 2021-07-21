@@ -40,7 +40,7 @@ public class DistanceBetweenTwoCitiesConmtrollerIT {
 				"/api/v1/getDistance?loc1="+URLEncoder.encode(postCode,StandardCharsets.UTF_8.toString())
 				+"&loc2="+URLEncoder.encode(postCode2,StandardCharsets.UTF_8.toString()),String.class);
 		
-		JSONAssert.assertEquals("{\"firstlocation\":{\"postCode\":\"AB12 4NA\",\"latitude\":\"57°3'51\\\"N\",\"longitude\":\"2°7'48\\\"S\"},\"secondlocation\":{\"postCode\":\"AB16 5ST\",\"latitude\":\"57°9'48\\\"N\",\"longitude\":\"2°9'34\\\"S\"},\"distance\":11.171,\"unit\":\"KM\"}", 
+		JSONAssert.assertEquals("{\"firstlocation\":{\"postCode\":\"AB12 4NA\",\"latitude\":\"57°3'51\\\"N\",\"longitude\":\"2°7'48\\\"S\"},\"secondlocation\":{\"postCode\":\"AB16 5ST\",\"latitude\":\"57°9'48\\\"N\",\"longitude\":\"2°9'34\\\"S\"},\"distance\":11.171,\"unit\":\"km\"}", 
 					response.getBody(), false);
 		
 	}
@@ -54,7 +54,7 @@ public class DistanceBetweenTwoCitiesConmtrollerIT {
 				"/api/v1/getLatLng/"+postCode,String.class);
 
 	
-		JSONAssert.assertEquals("{\"postCode\":\"AB12 4NA\",\"latitude\":57.064273000,\"longitude\": -2.130011000	}", 
+		JSONAssert.assertEquals("{\"postCode\":\"AB12 4NA\",\"latitude\":57.064273000,\"longitude\": -2.130018000	}", 
 					response.getBody(), false);
 		
 		
@@ -83,7 +83,7 @@ public class DistanceBetweenTwoCitiesConmtrollerIT {
 		
 		ResponseEntity<String> response = restTemplate.withBasicAuth("admin", "qwerty0908&").postForEntity(updateLatLngURL, request, String.class);
 		
-		System.out.println(" REsp" + response);
+
 		
 		JSONAssert.assertEquals("{\"postCode\":\"AB21 7LP\",\"latitude\":57.209903000,\"longitude\":-2.182892001}", 
 					response.getBody(), false);
